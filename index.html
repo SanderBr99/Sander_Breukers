@@ -1280,32 +1280,38 @@ function cycleCard(card) {
 
     </div>
 
-    <div class="contact-right">
-      <div class="contact-form-wrap">
-        <div class="cf-row">
-          <div class="cf-field">
-            <label class="cf-label">Name</label>
-            <input class="cf-input" type="text" placeholder="John Doe" />
-          </div>
-          <div class="cf-field">
-            <label class="cf-label">Email</label>
-            <input class="cf-input" type="email" placeholder="john@example.com" />
-          </div>
-        </div>
-        <div class="cf-field">
-          <label class="cf-label">Subject</label>
-          <input class="cf-input" type="text" placeholder="New project, collaboration..." />
-        </div>
-        <div class="cf-field">
-          <label class="cf-label">Message</label>
-          <textarea class="cf-input cf-textarea" placeholder="Tell me about your project..."></textarea>
-        </div>
-        <button class="cf-submit" onclick="handleSubmit(this)">
-          <span class="cf-submit-text">Send message</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-      </div>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <!-- Honeypot tegen spam -->
+  <p style="display:none;">
+    <label>Don't fill this out: <input name="bot-field" /></label>
+  </p>
+
+  <div class="cf-row">
+    <div class="cf-field">
+      <label class="cf-label">Name</label>
+      <input class="cf-input" type="text" name="name" placeholder="John Doe" required />
     </div>
+    <div class="cf-field">
+      <label class="cf-label">Email</label>
+      <input class="cf-input" type="email" name="email" placeholder="john@example.com" required />
+    </div>
+  </div>
+
+  <div class="cf-field">
+    <label class="cf-label">Subject</label>
+    <input class="cf-input" type="text" name="subject" placeholder="New project, collaboration..." />
+  </div>
+
+  <div class="cf-field">
+    <label class="cf-label">Message</label>
+    <textarea class="cf-input cf-textarea" name="message" placeholder="Tell me about your project..." required></textarea>
+  </div>
+<br>
+  <button class="cf-submit" type="submit">
+    <span class="cf-submit-text">Send message</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </button>
+</form>
   </div>
 </section>
 
