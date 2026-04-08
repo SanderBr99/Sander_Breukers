@@ -927,12 +927,12 @@ function cycleCard(card) {
 
   <!-- Floating right-side social links -->
   <div class="hero-socials">
-    <a href="#" class="hero-social-link" target="_blank">
+    <a href="https://www.linkedin.com/in/sander-breukers-a239b724b/" class="hero-social-link" target="_blank">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
       <span>LinkedIn</span>
     </a>
     <div class="hero-social-divider"></div>
-    <a href="#" class="hero-social-link" target="_blank">
+    <a href="https://github.com/SanderBr99" class="hero-social-link" target="_blank">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
       <span>GitHub</span>
     </a>
@@ -994,7 +994,7 @@ function cycleCard(card) {
     </h2>
     <div class="about-photo">
       <div class="about-photo-inner">
-        <img src="assets\image.jpg" alt="Sander Breukers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <img src="sander.jpg" alt="Sander Breukers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
         <div class="about-photo-placeholder">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(240,237,230,0.15)" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           <span>Add sander.jpg</span>
@@ -1260,9 +1260,9 @@ function cycleCard(card) {
       <div class="contact-label">Let's work together</div>
       <h2 class="contact-title">READY FOR<br>THE NEXT<br>PROJECT?</h2>
       <div class="contact-info-list">
-        <a href="/cdn-cgi/l/email-protection#285b49464c4d5a064a5a4d5d434d5a5b68475d5c44474743064b4745" class="contact-info-item">
+        <a href="mailto:sander.breukers@outlook.com" class="contact-info-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
-          <span class="__cf_email__" data-cfemail="cab9aba4aeafb8e4a8b8afbfa1afb8b98aa5bfbea6a5a5a1e4a9a5a7">Sander.Breukers@outlook.com</span>
+          <span class="__cf_email__" data-cfemail="cab9aba4aeafb8e4a8b8afbfa1afb8b98aa5bfbea6a5a5a1e4a9a5a7">[email&#160;protected]</span>
         </a>
         <a href="tel:0487518422" class="contact-info-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.6 10.8a15.3 15.3 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.6 3.6 1 1 0 01-.25 1z"/></svg>
@@ -1274,44 +1274,45 @@ function cycleCard(card) {
         </div>
       </div>
       <div class="contact-socials">
-        <a href="#" class="social-link">LinkedIn</a>
-        <a href="#" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/sander-breukers-a239b724b/" target="_blank" class="social-link">LinkedIn</a>
+        <a href="https://github.com/SanderBr99" target="_blank" class="social-link">GitHub</a>
       </div>
 
     </div>
 
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-  <!-- Honeypot tegen spam -->
-  <p style="display:none;">
-    <label>Don't fill this out: <input name="bot-field" /></label>
-  </p>
-
-  <div class="cf-row">
-    <div class="cf-field">
-      <label class="cf-label">Name</label>
-      <input class="cf-input" type="text" name="name" placeholder="John Doe" required />
+    <div class="contact-right">
+      <div class="contact-form-wrap">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none"><input name="bot-field"></p>
+          <div class="cf-row">
+            <div class="cf-field">
+              <label class="cf-label">Name</label>
+              <input class="cf-input" type="text" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="cf-field">
+              <label class="cf-label">Email</label>
+              <input class="cf-input" type="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="cf-field">
+            <label class="cf-label">Subject</label>
+            <input class="cf-input" type="text" name="subject" placeholder="New project, collaboration..." />
+          </div>
+          <div class="cf-field">
+            <label class="cf-label">Message</label>
+            <textarea class="cf-input cf-textarea" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="cf-submit" id="submitBtn">
+            <span class="cf-submit-text">Send message</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+        <div id="formSuccess" style="display:none; font-family:'Space Mono',monospace; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; color:#22c55e; margin-top:16px;">
+          ✓ Message sent — I'll get back to you soon!
+        </div>
+      </div>
     </div>
-    <div class="cf-field">
-      <label class="cf-label">Email</label>
-      <input class="cf-input" type="email" name="email" placeholder="john@example.com" required />
-    </div>
-  </div>
-
-  <div class="cf-field">
-    <label class="cf-label">Subject</label>
-    <input class="cf-input" type="text" name="subject" placeholder="New project, collaboration..." />
-  </div>
-
-  <div class="cf-field">
-    <label class="cf-label">Message</label>
-    <textarea class="cf-input cf-textarea" name="message" placeholder="Tell me about your project..." required></textarea>
-  </div>
-<br>
-  <button class="cf-submit" type="submit">
-    <span class="cf-submit-text">Send message</span>
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-  </button>
-</form>
   </div>
 </section>
 
@@ -1400,13 +1401,32 @@ function initAnimations() {
   gsap.to('.contact-bg-text', { x: '-8%', scrollTrigger: { trigger: '.contact', start: 'top bottom', end: 'bottom top', scrub: 1 } });
 }
 
-function handleSubmit(btn) {
-  btn.classList.add('sent');
-  btn.querySelector('.cf-submit-text').textContent = 'Sent ✓';
-  setTimeout(() => {
-    btn.classList.remove('sent');
-    btn.querySelector('.cf-submit-text').textContent = 'Send message';
-  }, 3000);
+/* ===================== CONTACT FORM ===================== */
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const successMsg = document.getElementById('formSuccess');
+    btn.disabled = true;
+    btn.querySelector('.cf-submit-text').textContent = 'Sending...';
+
+    try {
+      const data = new FormData(form);
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      });
+      btn.classList.add('sent');
+      btn.querySelector('.cf-submit-text').textContent = 'Sent ✓';
+      successMsg.style.display = 'block';
+      form.reset();
+    } catch (err) {
+      btn.querySelector('.cf-submit-text').textContent = 'Send message';
+      btn.disabled = false;
+    }
+  });
 }
 
 initAnimations();
